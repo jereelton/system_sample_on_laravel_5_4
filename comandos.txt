@@ -1,0 +1,26 @@
+- Frameworks
+[2]LARAVEL/
+	[1]composer/
+		"instalando laravel => https://laravel.com/docs/5.5"
+		> composer global require "laravel/installer"
+		> composer create-project --prefer-dist laravel/laravel laravel_learning "5.5.*"
+		"reorganizando o projeto apos remoção de arquivos"
+		> composer dump-autoload
+	[2]artisan/
+		"criando um controller no laravel"
+		> php artisan make:controller TestController
+		"criando um webserver local para rodar o laravel"
+		> php artisan serve
+		"gerando a chave de segurança"
+		> php artisan key:generate
+		"criando models dentro de namespaces"
+		> php artisan make:model Models\\Balance -m
+		"criando as tabelas do migration"
+		> php artisan migrate
+		"criando um seeder (testes e preenchimento automatico)"
+		> php artisan make:seed UsersTableSeeder
+		> php artisan db:seed
+	[]elixir/
+[1]ADMIN-LTE
+	"instalando o tempalte"
+	> composer require jeroennoten/laravel-adminlte
